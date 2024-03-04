@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lr JOO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      color: dimgray;
+
+
+    }
+
+    .lr-sin {
+      font-family: "Playfair Display";
+      letter-spacing: 6px;
+      padding-top: 0px;
+      color: dimgray;
+      font-size: smaller;
+    }
+
+
+    .txt {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+      color: gray;
+      padding-top: 25px;
+
+    }
+
+    .lr-row {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .lr {
+      color: antiquewhite;
+    }
+
+    .lr-white,
+    .lr-hover-white:hover {
+      color: #000 !important;
+      background-color: #fff !important
+    }
+
+    .lr-card {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+
+    .lr-padding {
+      padding: 8px 16px !important
+    }
+
+    .lr-padding-large {
+      padding: 12px 24px !important;
+    }
+
+    .lr-top {
+      top: 0
+    }
+
+    .lr-right {
+      float: right !important
+    }
+
+    .lr-hide-small {
+      display: none !important
+    }
+
+    .lr-button {
+
+      user-select: none;
+    }
+
+    .lr-padding-large {
+      padding: 12px 24px !important;
+    }
+
+    .lr-opacity {
+      opacity: 0.60;
+    }
+
+    .lr-display-bottomleft {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .lr-content {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .lr-display-container {
+      position: relative;
+    }
+
+    .lr-card {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .lr-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .lr-xxlarge {
+      font-size: 36px !important;
+    }
+
+    .lr-wide {
+      letter-spacing: 4px;
+    }
+
+    .lr-row {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .lr-padding-64 {
+      padding-top: 64px !important;
+      padding-bottom: 64px !important;
+    }
+
+    .lr-col {
+      float: left;
+      width: 100%;
+
+    }
+
+    .lr-text-grey {
+      color: #757575 !important;
+      text-align: left;
+    }
+
+    .lr-text-greyy {
+      color: black !important;
+      text-align: left;
+
+
+    }
+
+
+    .lr-padding-large {
+      padding: 12px 24px !important;
+    }
+
+    .lr-hide-small {
+      display: none !important;
+    }
+
+    .lr-opacity-min {
+      opacity: 0.75;
+    }
+
+    .lr-round {
+      border-radius: 4px;
+    }
+
+    .lr-col {
+      float: left;
+      width: 100%;
+    }
+
+    .lr-half {
+      width: 49.99999%;
+    }
+
+    .lr-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .lr-padding-large {
+      padding: 12px 24px !important;
+    }
+
+    .lr-center {
+      text-align: center !important;
+    }
+
+    a:link,
+    a:visited {
+      background-color: white;
+      color: black;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .lr-animate-top {
+      animation: fading 10s infinite;
+    }
+
+    .lr-ct {
+      text-align: center !important;
+      width: full;
+      padding-left: 60px;
+    }
+
+    .lr-button:hover {
+      background-color: #EFEAEA
+    }
+
+
+
+    .lr-button:active {
+      background-color: gray;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .lr-text-blue-grey {
+      color: #607d8b !important;
+    }
+
+    .lr-padding-16 {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+    }
+
+    .lr-input {
+      padding: 8px;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .lr-light-grey {
+      color: #000 !important;
+      background-color: #f1f1f1 !important;
+    }
+
+    .lr-section {
+      margin-top: 16px !important;
+      margin-bottom: 16px !important;
+    }
+
+    .lr-buttonn {
+      border: none;
+      display: inline-block;
+      padding: 8px 16px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      background-color: inherit;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .lr-light-grey {
+      color: #000 !important;
+      background-color: #f1f1f1 !important;
+    }
+
+    .lr-padding-32 {
+      padding-top: 32px !important;
+      padding-bottom: 32px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Navbar (sit on top) -->
+  <div class="lr-top">
+    <a href="#home " class="color:gray lr-button lr-button:hover lr-button:active">Lr's KITCHEN</a>
+    </a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+
+
+
+
+
+    <a class=" lr-right lr-button lr-button:hover lr-button:active" href="#contact">Contact</a>
+    <a class=" lr-right lr-button lr-button:hover lr-button:active" href="#menu">Menu</a>
+    <a class=" lr-right lr-button lr-button:hover lr-button:active" href="#about">About</a>
+
+  </div>
+  </div>
+
+  <!-- Header -->
+  <header class="lr-display-container lr-content lr-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="lr-image lr-animate-top" src="https://imgur.com/qpVgGmS.jpg" width="1600" height="800">
+    <div class="lr-display-bottomleft lr-padding-large lr-opacity">
+      <h1 class="lr-xxlarge lr">Lr's Catering</h1>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="lr-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <table style="width:100%;">
+      <tr>
+        <th style="width:50%;">
+          <div class="lr-row lr-padding-64" id="about">
+            <div class="lr-col.m6 lr-padding-large ">
+              <img src="https://imgur.com/5Smt8df.jpg" class="lr-round lr-image lr-opacity-min lr-image:hover"
+                width="600" height="750">
+            </div>
+          </div>
+        </th>
+        <th style="width:50%;">
+
+          <h1 class="">About Catering</h1>
+          <span class="lr-sin">Tradition since 1995</span>
+
+          <p class="txt">A Lr's Kitchen serving up delicious small plates,
+            Chef's specials and fine wines to elevate your dining fate.
+            Relax, unwind, and enjoy the ambiance and taste,
+
+  </div>
+  </th>
+  </tr>
+  </table>
+  <hr>
+
+  <!-- Menu Section -->
+  <h1 class="lr-ct">Our Menu</h1>
+  <table>
+    <tr>
+      <th>
+        <div class="lr-row lr-padding-64 width=50% lr-col l6 lr-padding-large" id="menu">
+
+
+          <P class="lr-text-greyy">Savory roast sandwich</P>
+          <p class="lr-text-grey">Savory roast sandwich with melted Swiss cheese</p><br>
+
+          <P class="lr-text-greyy">Chicken Chettinad </P>
+          <p class="lr-text-grey"> A Fiery and Aromatic Chicken Dish.</p><br>
+
+          <P class="lr-text-greyy">Chicken Parmesan</P>
+          <p class="lr-text-grey">Breaded chicken breast topped </p><br>
+
+          <P class="lr-text-greyy">Uttapam </P>
+          <p class="lr-text-grey"> The Fluffy Rice Pancake.</p><br>
+
+
+          <p class="lr-text-greyy">Idli and Vada </p>
+          <p class="lr-text-grey"> The Showstoppers Of Tamil Nadu Cuisine.</p><br>
+
+          <p class="lr-text-greyy">Paruppu Payasam </P>
+          <p class="lr-text-grey"> A Tasty Lentil Dessert.</p><br>
+
+          <p class="lr-text-greyy">Chocolate Lava Cake</P>
+          <p class="lr-text-grey">Warm chocolate cake with a gooey molten center, vanilla ice cream.</p>
+          <br>
+      </th>
+      <th>
+
+        <div class="lr-col l6 lr-padding-large">
+          <img src="https://imgur.com/PlLaYKy.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" width="500"
+            height="full">
+        </div>
+
+      </th>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="lr-container lr-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p class="lr-text-blue-grey lr-large">We offer full-service catering for any event, large or small. We understand
+      your needs and we will cater the food
+      to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="lr-text-blue-grey lr-large"><b>Catering Service, Ml St, 623707 PARAMAKUDI, TN</b></p>
+    <p>You can also contact us by phone 00914 21000 or email lr'skitchen@catering.com, or you can send us a message
+      here:</p>
+    <form>
+      <p><input class="lr-input lr-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="lr-input lr-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="lr-input lr-padding-16" type="datetime-local" placeholder="Date and time" required name="date"
+          value="2020-11-16T20:00"></p>
+      <p><input class="lr-input lr-padding-16" type="text" placeholder="Message \ Special requirements" required
+          name="Message"></p>
+      <p><button onclick="myFunction()" class="lr-buttonn lr-light-grey lr-section" type="submit">SEND MESSAGE</button>
+      </p>
+    </form>
+  </div>
+
+  <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="lr-center lr-light-grey lr-padding-32">
+    <p>Powered by JOO.LR</p>
+  </footer>
+
+</body>
+
+</html>
+<script>
+  function myFunction() {
+    location.href = 'thank.html';
+
+  }
+</script>
